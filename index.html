@@ -16,43 +16,40 @@
     <script src="https://kit.fontawesome.com/330d5d131d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
     <title>UntrefSchool</title>
+    
 </head>
 
 <body>
-    <header>
-        <img class="logo" src="./img/US.png">
+    <nav class="navegador" id="navegador-header">
+        <header class="navegador-header">
+            <a href="index.html">
+                <img src="./img/US.png" alt="logotipo UNTREFSCHOOL" class="logo-untrefschool" width="200px" /></a>
+            <a href="#navegador-header" class="menu-cel abrir">
+                <img src="./img/menu.png" alt="Ícono de Menú" width="30px" /></a>
+            <a href="#" class="menu-cel cerrar">
+                <img src="./img/letra-x.png" alt="Ícono de cerrar menú" width="30px" /></a>
+        </header>
+        <ul class="navbar-container">
+            <li class="navbar-item">
+                <a href="#quienes-somos" class="navbar-link"> QUIÉNES SOMOS</a>
+            </li>
+            <li class="navbar-item">
+                <a href="#por-que-elegirnos" class="navbar-link">
+                    ¿POR QUÉ ELEGIRNOS?</a>
+            </li>
+            <li class="navbar-item">
+                <a href="#propuesta-educativa" class="navbar-link">
+                    PROPUESTA EDUCATIVA</a>
+            </li>
+            <li class="navbar-item">
+                <a href="#ultimas-noticias" class="navbar-link"> ÚLTIMAS NOTICIAS</a>
+            </li>
+            <li class="navbar-item">
+                <a href="form.html" class="navbar-link"> CONTACTOS </a>
+            </li>
+        </ul>
+    </nav>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-              <a class="navbar-brand" href="#"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#quienes-somos">Quiénes somos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#por-que-elegirnos">¿Por qué elegirnos?</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#propuesta-educativa">Propuesta Educativa</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#Últimas-Noticias">Noticias</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="form.html">Contacto</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-
-
-    </header> 
     <main>
         <section>
             <div id="carouselExampleIndicators" class="carousel slide">
@@ -80,14 +77,16 @@
                 </button>
             </div>
         </section>
-        <h1> Untref School</h1>
-        </div>
-        <div class="titulos">
-            <div id="quienes-somos">
-                <img class="foto-somos" src="./img/college-g7ce57e036_1280.jpg">
-                <div class="somos">
-                    <h2>Quiénes Somos</h2>
-                    <p>Somos una escuela primaria enfocada en brindar una educación de calidad. Desde nuestros inicios
+
+        <section id="quienes-somos">
+            <h1>QUIÉNES SOMOS</h1>
+            <br>
+            <article class="article-quienessomos">
+                <img src="./img/college-g7ce57e036_1280.jpg" alt="escuela" width="70%" />
+                <br><br>
+                <p>
+                    <strong> Somos una escuela primaria enfocada en brindar una educación de calidad. Desde nuestros
+                        inicios
                         en
                         1927,hemos trabajado para fomentar el
                         crecimiento integral de cada estudiante permitiendoles desarrollar todo su potencial.Nuestro
@@ -98,13 +97,18 @@
                         respeto y la solidaridad.
                         Nuestra escuela se
                         enorgullece de ofrecer un ambiente propicio para el aprendizaje, la creatividad y la
-                        exploración.</p>
-                </div>
-            </div>
-            <div id="por-que-elegirnos">
-                <div class="elegirnos">
-                    <h2>¿Por qué elegirnos?</h2>
-                    <p>En Untref School nos enfocamos en el logro académico y el
+                        exploración.</strong>
+                </p>
+            </article>
+        </section>
+        <section id="por-que-elegirnos">
+            <h1>¿POR QUÉ ELEGIRNOS?</h1>
+            <br>
+            <article class="article-porqueelegirnos">
+                <img src="./img/nina-dibujando-su-cuaderno.jpg" alt="niño con libros" width="70%" />
+                <br><br>
+                <p>
+                    <strong> En Untref School nos enfocamos en el logro académico y el
                         desarrollo integral de los estudiantes. El currículo oficial se complementa con actividades
                         extracurriculares que enriquecen la experiencia educativa.
                         La seguridad y el bienestar de los estudiantes son una prioridad en para nosotros.
@@ -115,31 +119,30 @@
                         La escuela se esfuerza por estar a la vanguardia de las metodologías pedagógicas y
                         la integración de la tecnología en el aprendizaje. Esto proporciona a los estudiantes una
                         experiencia
-                        educativa moderna y relevante, preparándolos para los desafíos del siglo XXI
-                    </p>
-
-                </div>
-                <img class="foto-elegirnos" src="./img/nina-dibujando-su-cuaderno.jpg">
-            </div>
+                        educativa moderna y relevante, preparándolos para los desafíos del siglo XXI.</strong>
+            </article>
             <section id="propuesta-educativa">
-                <h2 class="propuesta">Propuesta educativa</h2>
-                <p> <strong>Aprendizaje activo y participativo:</strong>Los estudiantes son
+                <h1 class="propuesta">PROPUESTA EDUCATIVA</h1>
+                <p> <strong><u>APRENDIZAJE ACTIVO Y PARTICIPATIVO</u>: Los estudiantes son
                     animados a plantear preguntas, investigar, experimentar y construir su propio conocimiento. <br>
 
-                    <strong>Desarrollo de habilidades socioemocionales:</strong>Untref School incorpora actividades y
+                    <u>DESARROLLO DE HABILIDADES SOCIOEMOCIONALES</u>:Untref School incorpora actividades y
                     estrategias para fortalecer habilidades como la empatía, la resiliencia, la comunicación efectiva,
                     el trabajo en equipo y la resolución de conflictos. <br>
 
-                    <strong>Enfoque interdisciplinario:</strong> Se fomenta la integración de diferentes áreas del conocimiento,
+                    <u>ENFOQUE INTERDISCIPLINARIO</u>: Se fomenta la integración de diferentes áreas del
+                    conocimiento,
                     permitiendo a los estudiantes hacer conexiones entre distintas disciplinas y abordar problemas desde
                     múltiples perspectivas. Esto ayuda a desarrollar un pensamiento crítico y creativo. <br>
 
-                    <strong>Uso de tecnología y recursos digitales:</strong> Untref School reconoce la importancia de la tecnología en la
+                   <u>USO DE TECNOLOGÍA Y RECURSOS DIGITALES</u>: Untref School reconoce la importancia de la
+                    tecnología en la
                     sociedad actual y la integra de manera significativa en el proceso de enseñanza-aprendizaje. <br>
-                    
-                    <strong>Educación en valores:</strong> Se promueven valores como el respeto, la tolerancia, la responsabilidad, la
+
+                    <u>EDUCACIÓN EN VALORES</u>: Se promueven valores como el respeto, la tolerancia, la
+                    responsabilidad, la
                     solidaridad y la honestidad. A través de actividades y proyectos, se busca que los estudiantes
-                    reflexionen sobre estos valores y los incorporen en su vida diaria.  <br>                
+                    reflexionen sobre estos valores y los incorporen en su vida diaria.</strong> <br>
                 </p>
                 <div class="section-content propuestas">
                     <div class="section-element octagon">
@@ -159,115 +162,103 @@
                     </div>
                 </div>
             </section>
-        <section class="row" id="ultimas-noticias">
-            <h2 class="section-title">Últimas noticias</h2>
-            <article class="col-12 col-md-3">
-                <div class="card" style="width: 18rem;">
-                    <img src="./img/ninos-recogen-basura-bolsas-basura-parque.jpg" class="card-img-top" alt="reciclaje">
-                    <div class="card-body">
-                        <p class="card-text">
-                            Los estudiantes de Untref School llevaron a cabo un proyecto de servicio comunitario
-                            enfocado en la protección del medio ambiente. Su trabajo en la limpieza de un parque local y
-                            la concienciación sobre la importancia de la sostenibilidad les valió el reconocimiento de
-                            la comunidad y de organizaciones ambientales.
-                        </p>
-                    </div>
-                </div>
-            </article>
-            <article class="col-12 col-md-3">
-                <div class="card" style="width: 18rem;">
-                    <img src="./img/ninos-tiro-medio-medallas.jpg" class="card-img-top" alt="niñosmedalla">
-                    <div class="card-body">
-                        <p class="card-text">Los estudiantes de Untref School demostraron su excelencia en matemáticas
-                            al obtener múltiples reconocimientos en la Olimpiada Nacional de Matemáticas. Su dedicación,
-                            habilidades y resolución de problemas destacaron a la escuela como referente en el campo de
-                            las matemáticas.</p>
-                    </div>
-                </div>
-            </article>
-            <article class="col-12 col-md-3">
-                <div class="card" style="width: 18rem;">
-                    <img src="./img/ninos-parados-lado-camara-mirando-tableros-carga.jpg" class="card-img-top"
-                        alt="tecnologia">
-                    <div class="card-body">
-                        <p class="card-text">Untref School se ha convertido en la primera escuela primaria en la región
-                            en implementar un programa integral de educación STEM (ciencia, tecnología, ingeniería y
-                            matemáticas). Mediante el uso de laboratorios equipados con tecnología de vanguardia y
-                            actividades prácticas, los estudiantes tienen la oportunidad de explorar y desarrollar
-                            habilidades en estas áreas clave.
-                        </p>
-                    </div>
-                </div>
-            </article>
-            <article class="col-12 col-md-3">
-                <div class="card" style="width: 18rem;">
-                    <img src="./img/ninos-tiro-medio-medallas (2).jpg" class="card-img-top" alt="copa">
-                    <div class="card-body">
-                        <p class="card-text">Un equipo de estudiantes de Untref School participó en una prestigiosa
-                            competencia de robótica a nivel nacional y logró destacarse, obteniendo premios por su
-                            creatividad, diseño y programación de robots. Esta destacada participación refuerza el
-                            enfoque en la tecnología y la innovación de la escuela.
-                        </p>
-                    </div>
-                </div>
-            </article>
-        </section>
-    </main>
-    <footer>
-        <section>
-            <article>
-                <div>
-                    <div>
-                        <h3 class="redes-sociales">Redes Sociales</h3>
-                        <div class="redes">
-                            <ul class="social-media">
-                                <a href="https://www.facebook.com"><img width="60" height="60"
-                                        src="https://img.icons8.com/3d-fluency/94/facebook-circled.png"
-                                        alt="facebook-circled"></a>
-                                <a href="https://www.youtube.com"><img width="60" height="60"
-                                        src="https://img.icons8.com/3d-fluency/94/youtube.png" alt="youtube"></a>
-                                <a href="https://www.twitter.com"><img width="60" height="60"
-                                        src="https://img.icons8.com/3d-fluency/94/twitter-circled.png"
-                                        alt="twitter-circled"></a>
-                                <a href="https://www.instagram.com"><img width="60" height="60"
-                                        src="https://img.icons8.com/3d-fluency/94/instagram-new.png"
-                                        alt="instagram-new"></a>
-                            </ul>
-                        </div>
-                    </div>
-                    <div>
-            </article>
-            <article>
-                <div>
-                    <div class="maps">
-                        <h3 class="redes-sociales">Untref School</h3>
-                        <iframe class="mapa"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9655173501587!2d-58.56691698976352!3d-34.605033457453004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacb9f8ff113%3A0x22fd08da6711928d!2sUniversidad%20Nacional%20de%20Tres%20de%20Febrero%20-%20Sede%20Caseros%20I!5e0!3m2!1ses-419!2sar!4v1689379054542!5m2!1ses-419!2sar"
-                            style="border:0;" allowfullscreen="" loading="lazy" width="600" height="450"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                    <div>
-            </article>
-            <article>
-                <div>
-                    <div class="send">
+            <section class="container-fluid" id="ultimas-noticias">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="container mt-5">
+                            <h1>ÚLTIMAS NOTICIAS</h1>
+                            <div class="d-flex justify-content-center">
+                                <div class="p-2">
+                                    <img src="./img/ninos-recogen-basura-bolsas-basura-parque.jpg"
+                                        alt="servicio comunitario" class="img-fluid">
+                                    <h3>"Proyecto de servicio comunitario de Untref School recibe reconocimiento"
 
-                        <a class="contacto-footer" href="./form.html">
-                            <h3 class="redes-sociales">Contacto
-                        </a></h3><span class="click-aqui">Click aqui</span></a>
-                        <div>
-                            <div id="contacto">
-                                <p class="contacto">Dirección: Valentín Gómez 4828 38, Caseros, Provincia de Buenos
-                                    Aires</p>
-                                <p class="contacto">Email:info@untrefchool.com</p>
-                                <p class="contacto">Teléfono:123-456-7890</p>
+                                    </h3>
+                                    <p><strong>Los estudiantes de Untref School llevaron a cabo un proyecto de servicio
+                                        comunitario enfocado en la protección del medio ambiente. Su trabajo en la
+                                        limpieza de un parque local y la concienciación sobre la importancia de la
+                                        sostenibilidad les valió el reconocimiento de la comunidad y de organizaciones
+                                        ambientales.</strong>
+
+
+
+                                    </p>
+                                </div>
+                                <div class="p-2">
+                                    <img src="./img/ninos-tiro-medio-medallas.jpg"
+                                        alt="medallas" class="img-fluid">
+                                    <h3>"Untref School se destaca en la Olimpiada de Matemáticas"</h3>
+                                    <p><strong>Los estudiantes de Untref School demostraron su excelencia en matemáticas al
+                                        obtener múltiples reconocimientos en la Olimpiada Nacional de Matemáticas. Su
+                                        dedicación, habilidades y resolución de problemas destacaron a la escuela como
+                                        referente en el campo de las matemáticas.</strong>
+
+
+                                    </p>
+                                </div>
+                                <div class="p-2">
+                                    <img src="./img/ninos-parados-lado-camara-mirando-tableros-carga.jpg"
+                                        alt="tecnologia" class="img-fluid">
+                                    <h3>"Untref School implementa un programa pionero de educación STEM"
+                                    </h3>
+
+                                    <p><strong>Untref School se ha convertido en la primera escuela primaria en la región en
+                                        implementar un programa integral de educación STEM (ciencia, tecnología,
+                                        ingeniería y matemáticas). Mediante el uso de laboratorios equipados con
+                                        tecnología de vanguardia y actividades prácticas, los estudiantes tienen la
+                                        oportunidad de explorar y desarrollar habilidades en estas áreas clave.</strong>
+
+
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div>
-            </article>
-        </section>
+                </div>
+            </section>
+    </main>
+    <footer class="footer">
+        <br />
+        <section class="contenedor-redes" id="contactanos">
+            <div class="contenedor-redessociales">
 
+                <h2>REDES SOCIALES</h2>
+
+                <div id="redes-sociales">
+                    <a href="https://www.facebook.com/" target="_blank"> <img
+                            src="https://img.icons8.com/3d-fluency/94/facebook-circled.png" alt="logo-facebook"
+                            width="50rem">
+                    </a>
+                    <a href="https://youtube.com/" target="_blank"> <img
+                            src="https://img.icons8.com/3d-fluency/94/youtube.png" alt="logo-youtube" width="50rem">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank"> <img
+                            src="https://img.icons8.com/3d-fluency/94/instagram-new.png" alt="logo-instagram"
+                            width="50rem">
+                    </a>
+                    <br>
+                </div>
+            </div>
+            <div class="contenedor-institucion">
+                <h2>INSTITUCIÓN</h2>
+                <br />
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9655173501587!2d-58.56691698976352!3d-34.605033457453004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacb9f8ff113%3A0x22fd08da6711928d!2sUniversidad%20Nacional%20de%20Tres%20de%20Febrero%20-%20Sede%20Caseros%20I!5e0!3m2!1ses-419!2sar!4v1689379054542!5m2!1ses-419!2sar"
+                    width="90%" height="200px" style="border: 0" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <br>
+                <br>
+            </div>
+            <div class="contenedor-contacto">
+                <h2> CONTACTO</h2>
+                <div id="contactos">
+                    <a href="contacto">utrefschool@utref.edu.ar</a>
+                    <a href="contacto">+549 6892 125881</a>
+                </div>
+                <div>
+                    <a href="form.html" target="_blank" id="boton-escribenos">¡Escríbenos!</a>
+                </div>
+        </section>
         <p class="derechos">Todos los derechos reservados Untref School 2023</p>
 
     </footer>
